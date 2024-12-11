@@ -5,7 +5,7 @@ This repository contains code for training the difussion model with [DoT](https:
 ## Overview
 Large Language Models (LLMs) have achieved impressive success in System-1 tasks requiring intuitive and rapid processing but continue to face significant challenges in System-2 tasks that demand deliberate reasoning, particularly in mathematical domains. Existing approaches, such as Chain-of-Thought (CoT) reasoning, enhance reasoning by generating intermediate steps. However, these methods often suffer from inefficiencies, error propagation, and limited scalability. To address these challenges, Diffusion of Thoughts (DoT) was recently proposed, reframing combinatorial search problems as continuous optimization tasks. While DoT shows promise in improving reasoning, it struggles with generating high-quality synthetic data, thereby constraining its scalability. In this work, we introduce a hybrid framework that integrates a System-1 language model for synthetic data generation with a DoT-inspired model for reasoning. Our iterative training pipeline incorporates self-correction and verification mechanisms to ensure the quality of the generated synthetic data, fostering synergistic improvement between the two sub-models. Using the GSM8K dataset as a benchmark, our preliminary results highlight the framework's potential to enhance reasoning performance while scaling data efficiently. 
 
-<img src = "fig/pipeline.pdf" align = "center" width="80%" hight="80%">
+<img src = "fig/pipeline.png" align = "center" width="60%" hight="60%">
 
 ## Setup
 All required packages can be found in requirements.txt. You can install them in a new environment with
